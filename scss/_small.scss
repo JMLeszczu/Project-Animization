@@ -1,11 +1,14 @@
 @media (max-width: 576px) {
 	.header {
 		justify-content: center;
+		.header-character {
+			display: none;
+		}
 		.header-text {
 			margin: 0;
 		}
-        &__title{
-            font-size: 4rem;
-        }
+		&__title {
+			font-size: 4rem;
+		}
 	}
 }
