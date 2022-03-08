@@ -1,0 +1,53 @@
+@import "./colors";
+*,
+*::before,
+*::afte {
+	box-sizing: border-box;
+	font-family: "Rubik", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	position: relative;
+}
+.navbar {
+	.nav-bar {
+		text-transform: uppercase;
+		color: black;
+		font-size: 1.6rem;
+	}
+	.navbar-brand {
+		font-size: 2rem;
+	}
+}
+.header {
+	height: 90vh;
+	width: 100%;
+	.header-middle {
+		margin-right: 5em;
+	}
+	.header-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: end;
+		height: 100%;
+		width: 100%;
+		padding-right: 20em;
+	}
+	&__title {
+		text-transform: uppercase;
+		color: $main-color;
+		margin: 0;
+		font-weight: bold;
+		font-size: 5rem;
+	}
+	&__under-text {
+		margin-bottom: 0.5em;
+		color: black;
+		font-size: 2rem;
+	}
+}

@@ -1,0 +1,70 @@
+*,
+*::before,
+*::afte {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+}
+
+.navbar .nav-bar {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.navbar .navbar-brand {
+  font-size: 2rem;
+}
+
+.header {
+  height: 90vh;
+  width: 100%;
+}
+
+.header .header-middle {
+  margin-right: 5em;
+}
+
+.header .header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  height: 100%;
+  width: 100%;
+  padding-right: 20em;
+}
+
+.header__title {
+  text-transform: uppercase;
+  color: #5fcf7d;
+  margin: 0;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.header__under-text {
+  margin-bottom: 0.5em;
+  color: black;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
