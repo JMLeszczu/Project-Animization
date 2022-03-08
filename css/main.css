@@ -1,3 +1,9 @@
+.wrapper {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
 *,
 *::before,
 *::afte {
@@ -9,11 +15,13 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
 body {
   position: relative;
+  font-family: "Rubik", sans-serif;
 }
 
 .navbar {
@@ -73,6 +81,12 @@ body {
   color: #2f8245;
 }
 
+.shadow-bg {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .header {
   position: relative;
   display: -webkit-box;
@@ -96,7 +110,8 @@ body {
   position: relative;
   height: 600px;
   width: 600px;
-  background-color: #5fcf7d;
+  background: #2f8245;
+  background: radial-gradient(circle, #2f8245 32%, #5fcf7d 100%);
   border-radius: 50%;
   margin-top: 5em;
   margin-right: 25em;
@@ -193,6 +208,19 @@ body {
   height: 100%;
   z-index: -3;
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+.news {
+  height: 80vh;
+}
+
+.news__box-item img {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: 2px solid black;
+  border-radius: 50%;
 }
 
 @media (max-width: 576px) {

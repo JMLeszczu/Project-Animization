@@ -1,4 +1,6 @@
 @import "./colors";
+@import "./components";
+
 *,
 *::before,
 *::afte {
@@ -8,10 +10,12 @@
 	margin: 0;
 }
 html {
+	scroll-behavior: smooth;
 	font-size: 62.5%;
 }
 body {
 	position: relative;
+	font-family: "Rubik", sans-serif;
 }
 
 //navbar
@@ -60,6 +64,10 @@ body {
 	}
 }
 
+.shadow-bg {
+	transition: background-color 0.3s;
+	background-color: rgba(0, 0, 0, 0.9);
+}
 //header
 .header {
 	position: relative;
@@ -73,7 +81,12 @@ body {
 		position: relative;
 		height: 600px;
 		width: 600px;
-		background-color: $main-color;
+		background: rgb(47, 130, 69);
+		background: radial-gradient(
+			circle,
+			rgba(47, 130, 69, 1) 32%,
+			rgba(95, 207, 125, 1) 100%
+		);
 		border-radius: 50%;
 		margin-top: 5em;
 		margin-right: 25em;
@@ -146,6 +159,21 @@ body {
 		}
 	}
 }
+//Sections
+.news {
+	height: 80vh;
+
+	&__box-item {
+		img {
+			height: 200px;
+			width: 200px;
+			object-fit: cover;
+			outline: 2px solid black;
+			border-radius: 50%;
+		}
+	}
+}
+//Section ostatnie anime
 
 @import "./small";
 @import "./medium";
