@@ -1,0 +1,11 @@
+@media (max-width: 576px) {
+	.header {
+		justify-content: center;
+		.header-text {
+			margin: 0;
+		}
+        &__title{
+            font-size: 4rem;
+        }
+	}
+}
