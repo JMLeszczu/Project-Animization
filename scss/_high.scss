@@ -6,13 +6,33 @@
 			justify-content: center;
 			align-items: center;
 			box-shadow: 8px 8px 24px 0px $second-color;
-			
 		}
 		.header-text {
 			margin-right: 30em;
 		}
 		&__bgc {
 			background-image: url("../img/header-big.png");
+		}
+	}
+	//news
+	.news {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 95vh;
+		.wrapper {
+			max-width: 1000px;
+		}
+		&__box-item {
+			flex-direction: row;
+			padding: 0;
+		}
+		&__img {
+			margin-right: 2em;
+		}
+		.second {
+			order: 1;
+			margin-left: 2em;
 		}
 	}
 }

@@ -1,4 +1,5 @@
 @media (min-width: 768px) {
+	//header
 	.header {
 		justify-content: center;
 		.header-character {
@@ -6,6 +7,33 @@
 		}
 		.header-text {
 			margin: 0;
+		}
+	}
+	//news
+	.news {
+		display: flex;
+		align-items: center;
+		height: 135vh;
+		.wrapper {
+			max-width: 500px;
+			margin: 0;
+		}
+		&__box-item {
+			text-align: center;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 5em;
+
+			.second {
+				order: 0;
+			}
+		}
+		&__img {
+			margin: 0 0 2em 0;
+		}
+		&:focus {
+			transform: scale(1.1);
 		}
 	}
 }

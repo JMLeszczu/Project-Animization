@@ -161,16 +161,48 @@ body {
 }
 //Sections
 .news {
-	height: 80vh;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	background-color: #333;
 	&__box-item {
-		img {
-			height: 200px;
-			width: 200px;
-			object-fit: cover;
-			outline: 2px solid black;
-			border-radius: 50%;
+		display: flex;
+		align-items: center;
+		margin: 5em 0;
+		transition: transform 0.3s;
+		.second {
+			object-position: 100%;
+			order: 1;
 		}
+		.news__text {
+			
+			text-decoration: none;
+			a {
+				text-decoration: none;
+				color: white;
+			}
+			h2 {
+				text-transform: uppercase;
+				font-size: 2rem;
+				color: $main-color;
+			}
+			p {
+				font-size: 1.4rem;
+			}
+		}
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	&__img {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 2px solid $main-color;
+		margin-right: 2em;
 	}
 }
 //Section ostatnie anime
