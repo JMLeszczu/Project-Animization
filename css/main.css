@@ -422,6 +422,9 @@ body {
             align-items: center;
     height: 95vh;
   }
+  .news .news__text {
+    text-align: left;
+  }
   .news .wrapper {
     max-width: 1000px;
   }
@@ -436,10 +439,10 @@ body {
     margin-right: 2em;
   }
   .news .second {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-left: 2em;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -20,6 +20,10 @@
 		justify-content: center;
 		align-items: center;
 		height: 95vh;
+		
+		.news__text{
+			text-align: left;
+		}
 		.wrapper {
 			max-width: 1000px;
 		}
@@ -31,8 +35,8 @@
 			margin-right: 2em;
 		}
 		.second {
-			order: 1;
-			margin-left: 2em;
+			order: 2;
+			margin-left: 1em;
 		}
 	}
 }
